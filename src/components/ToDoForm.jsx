@@ -12,6 +12,7 @@ function ToDoForm() {
     return(
         <form onSubmit={handleSubmit}>
             <h1>TODO FORM</h1>
+            <h2></h2>
             <label htmlFor='todo' className="todo_label" name="todo">Todos</label>
             <input type="text" name="todo" className="todo_input" />
             <input type="submit" className="submit_btn" value="Submit"/>
