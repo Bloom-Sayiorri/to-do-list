@@ -15,7 +15,7 @@ function ToDoList({todos}) {
     })
     return(
         <main>
-            <ToDoForm/>
+            <ToDoForm todos={todos}/>
             <div>
                 {displayedTodos}
             </div>
