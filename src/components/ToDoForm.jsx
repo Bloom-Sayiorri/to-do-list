@@ -14,7 +14,7 @@ function ToDoForm({todos}) {
             <div>
                 <label htmlFor='todo' className="todo_label" name="todo">Todos</label>
                 <input>{todos.title}</input>
-                <label htmlFor='description' className="todo_label" name="todo">Todos</label>
+                <label htmlFor='description' className="todo_label" name="todo">Description</label>
                 <input type="text" name="todo" className="todo_input" />
             </div>
             
