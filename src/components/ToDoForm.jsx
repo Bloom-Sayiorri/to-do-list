@@ -11,7 +11,7 @@ function ToDoForm({todos}) {
     return(
         <form onSubmit={handleSubmit}>
             <h1>TODO FORM</h1>
-            <div>
+            <div className='questions'>
                 <label htmlFor='todo' className="todo_label" name="todo">Todos</label>
                 <input>{todos.title}</input>
                 <label htmlFor='description' className="todo_label" name="todo">Description</label>
