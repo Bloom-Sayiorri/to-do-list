@@ -18,7 +18,6 @@ function ToDoForm({todos}) {
                 <label htmlFor='description' className="todo_label" name="todo">Description</label>
                 <input type="text" name="todo" className="todo_input" />
             </div>
-            
             <input type="submit" className="submit_btn" value="Submit"/>
         </form>
     )

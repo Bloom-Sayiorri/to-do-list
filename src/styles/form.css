@@ -1,5 +1,18 @@
 .questions {
     display: flex;
+    flex-direction: column;
     border: none;
     border-radius: 10px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.submit_btn {
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(56, 56, 228);
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
 }
