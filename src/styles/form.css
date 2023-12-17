@@ -1,3 +1,8 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
 .questions {
     display: flex;
     flex-direction: column;

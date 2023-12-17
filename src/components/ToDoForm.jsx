@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/form.css';
+import { FaMoon } from "react-icons/fa";
+import { CiLight } from "react-icons/ci";
 
 function ToDoForm({todos}) {
 
@@ -7,11 +9,15 @@ function ToDoForm({todos}) {
         e.preventDefault();
         console.log(e.target.todo.value);
     }
-
-
+    
     return(
         <form onSubmit={handleSubmit}>
-            <h1>TODO FORM</h1>
+            <header className='header'>
+                <h1>TODO FORM</h1>
+                <FaMoon />
+                <CiLight />
+            </header>
+            
             <div className='questions'>
                 <label htmlFor='todo' className="todo_label" name="todo">Todos</label>
                 <input>{todos.title}</input>
