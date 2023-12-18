@@ -13,7 +13,7 @@ function ToDoForm({todos}) {
     return(
         <form onSubmit={handleSubmit}>
             <header className='header'>
-                <h1>TODO FORM</h1>
+                <h1 className='title'>TODO FORM</h1>
                 <div className='header_icon'>
                     <FaMoon />
                     <CiLight />

@@ -3,12 +3,20 @@
     align-items: center;
     justify-content: space-between;
     margin-right: auto;
-    padding-left: 5rem;
+    padding-left: 10rem;
+    font-size: x-large;
+}
+
+.title {
+    font-weight: 500;
 }
 
 .header_icon {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
     margin-left: auto;
-    padding-right: 5rem;
+    padding-right: 10rem;
 }
 
 .questions {
@@ -17,7 +25,6 @@
     border: none;
     border-radius: 10px;
     align-items: center;
-    gap: 1rem;
 }
 
 .submit_btn {
