@@ -14,8 +14,11 @@ function ToDoForm({todos}) {
         <form onSubmit={handleSubmit}>
             <header className='header'>
                 <h1>TODO FORM</h1>
-                <FaMoon />
-                <CiLight />
+                <div className='header_icons'>
+                    <FaMoon />
+                    <CiLight />
+                </div>
+                
             </header>
             
             <div className='questions'>
