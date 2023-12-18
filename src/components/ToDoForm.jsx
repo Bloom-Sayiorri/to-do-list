@@ -22,10 +22,10 @@ function ToDoForm({todos}) {
             </header>
             
             <div className='questions'>
-                <label htmlFor='todo' className="todo_label" name="todo">Todos</label>
-                <input>{todos.title}</input>
-                <label htmlFor='description' className="todo_label" name="todo">Description</label>
-                <input type="text" name="todo" className="todo_input" />
+                <label htmlFor='todo' className="todo_label">Todos</label>
+                <input type="text" name="todo" id="todo" className="todo_input" value={todos.todo}/>
+                <label htmlFor='description' className="description_label">Description</label>
+                <input type="text" name="description" id="description" className="todo_input" value={todos.description}/>
             </div>
             <input type="submit" className="submit_btn" value="Submit"/>
         </form>
