@@ -30,6 +30,6 @@ function ToDoForm({todos}) {
             <input type="submit" className="submit_btn" value="Submit"/>
         </form>
     )
-}
+} 
 
 export default ToDoForm;
