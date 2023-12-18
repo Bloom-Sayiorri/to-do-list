@@ -18,7 +18,6 @@ function ToDoForm({todos}) {
                     <FaMoon />
                     <CiLight />
                 </div>
-                
             </header>
             
             <div className='questions'>
@@ -30,6 +29,6 @@ function ToDoForm({todos}) {
             <input type="submit" className="submit_btn" value="Submit"/>
         </form>
     )
-} 
+};
 
 export default ToDoForm;
