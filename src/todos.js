@@ -9,7 +9,7 @@ const todos = [
         id: 2,
         title: "Code in Python",
         description: "A high level language used in AI and Algorithms.",
-        completed: false
+        completed: true
     }
 ]
 
