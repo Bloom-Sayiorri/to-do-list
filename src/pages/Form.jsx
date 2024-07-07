@@ -18,13 +18,14 @@ const Form = () => {
   return (
     <div className={styles.container}>
         <div className={styles.wrapper}>
+            <h2 className={styles.heading}>Add New Todo</h2>
             <form onSubmit ={handleSubmit} className={styles.form}>
                 <label className={styles.titleLabel}>
                     Title: 
                     <input
                         type='text'
                         name='title'
-                        placeholder='Enter Todo...'
+                        placeholder='Enter todo...'
                         value={formData.title}
                         className={styles.title}
                     />
@@ -34,7 +35,7 @@ const Form = () => {
                     <input
                         type='text'
                         name='description'
-                        placeholder='Enter Todo...'
+                        placeholder='Enter description...'
                         value={formData.description}
                         className={styles.description}
                     />
