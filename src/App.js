@@ -3,6 +3,8 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
+import Todo from './pages/Todo';
+import Form from './pages/Form';
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         <Navbar darkTheme={darkTheme} toggleTheme={toggleTheme}/>
         <Routes>
           <Route exact path='/' element={<Home />}/>
+          <Route path='/todo' element={<Todo />}/>
+          <Route path='/form' element={<Form />}/>
         </Routes>
       </div>
     </BrowserRouter>
