@@ -1,6 +1,6 @@
 .container {
     background-color: rgb(227, 223, 218);
-    box-shadow: 10px 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .wrapper {
@@ -11,12 +11,15 @@
     padding: .7em 2em;
 }
 
-.heading {
-
+.darkMode {
+    color: orangered;
 }
 
-.navs {
-
+.lightMode {
+    color: blue;
+}
+.heading {
+    /* color: blue; */
 }
 
 .links {
@@ -26,7 +29,7 @@
 
 .link {
     text-decoration: none;
-    color: black;
+    color: inherit;
     font-weight: 700;
     font-size: 1.5em;
 }
