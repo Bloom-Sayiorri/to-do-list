@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../styles/todo.module.css';
 
-const Todo = () => {
+const Todos = () => {
     const [ todos, setTodos ] = useState([])
 
     // const todo = {
@@ -19,6 +19,13 @@ const Todo = () => {
     //     .then((data) => setTodos(data))
     // }, []);
 
+    // fetch todos from a file instead and render them in the file
+
+    const deleteTodo = (id) => {
+        const updatedTodo = todos.filter(todo => todo.id !== id);
+        setTodos(updatedTodo);
+    };
+
   return (
     <div className={styles.container}>
         {
@@ -30,6 +37,7 @@ const Todo = () => {
                         <p className={styles.status}>{todo.status}</p>
                         <p className={styles.priority}>{todo.priority}</p>
                         <p className={styles.dateCreated}>{todo.dateCreated}</p>
+                        <button onClick={deleteTodo}></button>
                     </div>
                 )
             })
@@ -38,4 +46,4 @@ const Todo = () => {
   )
 }
 
-export default Todo
+export default Todos

@@ -11,7 +11,7 @@ const Navbar = ({ darkTheme, toggleTheme }) => {
         <nav className={styles.wrapper}>
           <h1 className={`${styles.heading} + ${darkTheme ? 'darkMode' : 'lightMode'}`}>To-Do App</h1>
           <div className={styles.links}>
-            <Link to='/todo' className={styles.link}>Todo</Link>
+            <Link to='/todos' className={styles.link}>Todos</Link>
             <Link to='/form' className={styles.link}>Todo Form</Link> 
           </div>
           <div className={styles.togglers} onClick={toggleTheme}>

@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Todo from './pages/Todo';
+import Todos from './pages/Todos';
 import Form from './pages/Form';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Navbar darkTheme={darkTheme} toggleTheme={toggleTheme}/>
         <Routes>
           <Route exact path='/' element={<Home />}/>
-          <Route path='/todo' element={<Todo />}/>
+          <Route path='/todos' element={<Todos />}/>
           <Route path='/form' element={<Form />}/>
         </Routes>
         <Footer />
