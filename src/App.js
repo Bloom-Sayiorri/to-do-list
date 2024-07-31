@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Navbar from './components/Navbar'
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Todo from './pages/Todo';
 import Form from './pages/Form';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/todo' element={<Todo />}/>
           <Route path='/form' element={<Form />}/>
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   )
