@@ -24,14 +24,14 @@
 
 .links {
     display: flex;
-    gap: .7em;
+    gap: 2em;
 }
 
 .link {
     text-decoration: none;
     color: inherit;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .togglers {

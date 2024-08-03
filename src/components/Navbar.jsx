@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import styles from '../styles/navbar.module.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { LuMoonStar, LuSunMedium } from "react-icons/lu";
 
 const Navbar = ({ darkTheme, toggleTheme }) => {
@@ -9,10 +9,10 @@ const Navbar = ({ darkTheme, toggleTheme }) => {
   return (
     <header className={`${styles.container} ${darkTheme ? 'darkMode' : 'lightMode'}`}>
         <nav className={styles.wrapper}>
-          <h1 className={`${styles.heading} + ${darkTheme ? 'darkMode' : 'lightMode'}`}>To-Do App</h1>
+          {/* <h1 className={`${styles.heading} + ${darkTheme ? 'darkMode' : 'lightMode'}`}>To-Do App</h1> */}
           <div className={styles.links}>
             <Link to='/todos' className={styles.link}>Todos</Link>
-            <Link to='/form' className={styles.link}>Todo Form</Link> 
+            <Link to='/form' className={styles.link}>Add Todo</Link> 
           </div>
           <div className={styles.togglers} onClick={toggleTheme}>
             { darkTheme ? <LuSunMedium className={styles.sun}/> : <LuMoonStar className={styles.moon}/> }

@@ -13,11 +13,12 @@ const Todos = () => {
     //     dateCreated: String,
     // }
 
-    // useEffect(() => {
-    //     fetch('http://localhost:8000/todos')
-    //     .then(r => r.json())
-    //     .then((data) => setTodos(data))
-    // }, []);
+    useEffect(() => {
+        console.log("Nothing")
+        // fetch('http://localhost:8000/todos')
+        // .then(r => r.json())
+        // .then((data) => setTodos(data))
+    }, []);
 
     // fetch todos from a file instead and render them in the file
 
