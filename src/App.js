@@ -1,18 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Todos from './pages/Todos';
+import TodoList from './pages/TodoList';
 import Form from './pages/Form';
 
 function App() {
 
   const [ darkTheme, setDarkTheme ] = useState(false);
+  const [ todos, setTodos ] = useState([]);
 
   const toggleTheme = () => {
     setDarkTheme((theme) => !theme);
+  };
+
+  useEffect(() => {
+      fetch('http://localhost:3001/todos')
+      .then((res) => res.json())
+      .then((data) => setTodos(data))
+  }, []);
+
+  const handleAddTodo = (newTodo) => {
+    const updatedTodos = [...todos, newTodo];
+    setTodos(updatedTodos);
   };
 
   return (
@@ -20,9 +31,8 @@ function App() {
       <div className={`container ${darkTheme ? 'dark': 'light'}`}>
         <Navbar darkTheme={darkTheme} toggleTheme={toggleTheme}/>
         <Routes>
-          <Route exact path='/' element={<Home />}/>
-          <Route path='/todos' element={<Todos />}/>
-          <Route path='/form' element={<Form />}/>
+          <Route exact path='/todos' element={<TodoList todos={todos} setTodos={setTodos}/>}/>
+          <Route path='/form' element={<Form handleAddTodo={handleAddTodo}/>}/>
         </Routes>
         <Footer />
       </div>
